@@ -1,0 +1,38 @@
+{
+  "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9": {
+    "symbol": "ATOM",
+    "name": "ATOM",
+    "token": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+    "pair": "",
+    "lpToken": "",
+    "decimals": 6,
+    "isNative": true
+  },
+  "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034": {
+    "symbol": "USDC",
+    "name": "USDC",
+    "token": "ibc/EAC38D55372F38F1AFD68DF7FE9EF762DCF69F26520643CF3F9D292A738D8034",
+    "pair": "",
+    "lpToken": "",
+    "decimals": 6,
+    "isNative": true
+  },
+  "ujuno": {
+    "token": "ujuno",
+    "name": "ujuno",
+    "symbol": "ujuno",
+    "decimals": 6,
+    "lpToken": "",
+    "pair": "",
+    "isNative": true
+  },
+  "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup": {
+    "token": "juno1qsrercqegvs4ye0yqg93knv73ye5dc3prqwd6jcdcuj8ggp6w0us66deup",
+    "name": "Loop Protocol",
+    "symbol": "LOOP",
+    "pair": "",
+    "lpToken": "",
+    "decimals": 6,
+    "isNative": false
+  }
+}

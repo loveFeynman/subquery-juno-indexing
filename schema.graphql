@@ -1,0 +1,102 @@
+type Block @entity {
+  id: ID! # The block hash
+  height: BigInt!
+}
+
+type ExecuteEvent @entity {
+  id: ID!
+  blockHeight: BigInt!
+  txHash: String!
+  contractAddress: String!
+}
+
+type Transaction @entity {
+  id: ID!
+  blockHeight: BigInt!
+  timestamp: String!
+}
+  
+type Message @entity {
+  id: ID!
+  blockHeight: BigInt!
+  txHash: String!
+  sender: String!
+  contract: String!
+}
+
+enum TxType {
+  BUY
+  SELL
+}
+
+type TradingHistory @entity {
+  id: ID!
+  datetime: Date!
+  token: String!
+  secondToken: String!
+  pairAddr: String!
+  lpToken: String!
+  price: String!
+  baseVolume: String!
+  targetVolume: String!
+  txType: TxType
+}
+
+type TradingVolume @entity {
+  id: ID!
+  datetime: Date!
+  pair: String!
+  cumulativeLiquidity: String!
+  tradingVolume: String!
+}
+
+type FeeVolume @entity {
+  id: ID!
+  datetime: Date!
+  pair: String!
+  lp: String!
+  offerAsset: String!
+  askAsset: String!
+  volume: String!
+  tokenFee: String!
+  secondTokenFee: String!
+  commission: String!
+  count: String!
+}
+
+type Positions @entity {
+  id: ID!
+  datetime: Date!
+  pair: String!
+  lp: String!
+  token: String!
+  secondToken: String!
+  pool: String!
+  secondPool: String!
+  lpShares: String!
+}
+
+type Price @entity {
+  id: ID!
+  datetime: Date!
+  pair: String!
+  lp: String!
+  token: String!
+  secondToken: String!
+  open: String!
+  high: String!
+  low: String!
+  close: String!
+  volume: String!
+}
+
+type Tx @entity {
+  id: ID!
+  blockHeight: BigInt!
+  timestamp: Date!
+  volume: String!
+  commission: String!
+  type: String!
+  pair: String!
+  token: String
+}
